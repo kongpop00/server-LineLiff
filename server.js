@@ -12,9 +12,9 @@ const headers = {
   'Authorization' : `Bearer ${process.env.LINE_CHANEL_ACCESS_TOKEN}`
 }
 
-app.set('view engine', 'ejs')
 
-app.get("/", (req, res) =>
+
+app.get("/", (_req, res) =>
   res.send('this is my api runnig')
 );
 
